@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'custom_layout.dart';
+
 void main() {
   runApp(MyApp());
 }
@@ -29,8 +31,8 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
-
+      body: SafeArea(
+        child: CustomLayout(),
       ),
     );
   }
